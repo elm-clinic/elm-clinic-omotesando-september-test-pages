@@ -91,10 +91,10 @@
 
         <div id="container">
         <section id="contact">
-          <!-- <p class="center">エルムクリニック 表参道院<br></a></p> -->
+
           <h2 class="center">ご予約フォーム<br><a href="index.html"><span class="tiny">トップへ戻る</span></a></h2><br><br>
           
-          <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/xyylzqpb" method="post">
+          <!-- <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/xyylzqpb" method="POST">
           <fieldset id="fs-frm-inputs">
             <label for="full-name">・お名前 <span class="necessary">(必須)</span></label>
             <input type="text" name="name" id="full-name" placeholder="青山 得夢" required="required">
@@ -111,14 +111,6 @@
             <label for="email-address">・メールアドレス <span class="necessary">(必須)</span></label>
             <input type="text" name="_replyto" id="email-address" placeholder="aoyama@elm-clinic.jp" required="required">
             <br><br><br>
-            <!-- <fieldset id="fs-frm-selects">
-            <label for="timely">・ご希望の連絡先</label>
-              <select name="reply" id="interest" required="required">
-                <option value="Choose" selected="" disabled="">↓ 選ぶ ↓</option>
-                <option value="電話">電話</option>
-                <option value="メール">メール</option>
-              </select>
-            </fieldset> -->
 
             <label>・ご希望の連絡方法</label>
             <br>
@@ -144,16 +136,6 @@
             <label><input type = "radio" name = "about" value="カウンセリングと当日の施術" checked>&nbsp;カウンセリングと当日の施術</label>
             
             <br><br><br>
-
-            <!-- <fieldset id="fs-frm-selects">
-            <label for="timely">・ご予約の内容</label>
-              <select name="about" id="interest" required="required">
-                <option value="Choose" selected="" disabled="">↓ 選ぶ ↓</option>
-                <option value="カウンセリングのみのご予約">カウンセリングのみのご予約</option>
-                <option value="カウンセリングにより当日の施術までのご予約">カウンセリングにより当日の施術までのご予約</option>
-              </select>
-            </fieldset>
-            <br><br><br> -->
 
             <label>・第１希望のお日にち <span class="necessary">(必須)</span></label>
             <p class="necessary">※ 当面の間、日・月曜日は休診日です！</p>
@@ -219,18 +201,32 @@
             <br><br><br>
             <label for="message">その他 (任意)</label>
             <textarea rows="3" name="other" id="message" placeholder="ご質問などございましたら、なんでもお気軽にご記入いただけたら幸いです^^" ></textarea>
-            <!-- <input type="hidden" name="_subject" id="email-subject" value="Survey Responses"> -->
             <input type="hidden" name="_subject" value="こちら、ご予約完了確認メールです" />
-            <input type="hidden" name="表参道LPからのご予約です">
+            <input type="hidden" name="表参道院LPからのご予約です">
           </fieldset>
           <br>
           <p class="necessary">※ 必須項目は必ずご記入の上、以下のボタンからご送信をよろしくお願いいたします！</p>
           <br><br><br><input type="submit" value="送信" class="center shiny-btn5">
-          <!-- <input type="hidden" name="_cc" value="zillion-of-zest_stay-gold_sho1@i.softbank.jp" /> -->
           <p class="necessary">※ ご記入のメールアドレスにご返信させていただくか、あるいはお電話をご希望された方はお電話を差し上げますので、正確にご記入いただきますようお願いいたします。</p>
           <p class="necessary">※ メールやお電話等で当院からの返信があり次第、ご予約完了となります。</p>
           <p class="necessary">※ 万が一、メールが送信できなかった場合には、お電話を差し上げる場合もあります。あらかじめご了承いただけると幸いです。</p>
-        </form>
+        </form> -->
+
+
+        <form
+        action="https://formspree.io/f/xyylzqpb"
+        method="POST">
+        <label>
+          Your email:
+          <input type="email" name="_replyto">
+        </label>
+        <label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+      </form>
       </section>
 
                 
