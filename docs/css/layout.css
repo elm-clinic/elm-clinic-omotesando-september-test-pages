@@ -368,11 +368,9 @@ _:-ms-lang(x)::-ms-backdrop, #lead .lead-area p{
     flex-direction: row-reverse;
 }
 
-#contact .contact-img{
+#contact {
     width:70%;
     min-height: 300px;
-    background:url("../img/contact.jpg") no-repeat center;
-    background-size: cover;
 }
 
 #contact .contact-area{
@@ -381,7 +379,7 @@ _:-ms-lang(x)::-ms-backdrop, #lead .lead-area p{
 }
 
 @media screen and (max-width:1190px) {
-#contact .contact-img{
+#contact{
     width:60%;
     }
 #contact .contact-area{
@@ -390,7 +388,7 @@ _:-ms-lang(x)::-ms-backdrop, #lead .lead-area p{
 }
 
 @media screen and (max-width:768px) {
-#contact .contact-img{
+#contact {
     width:48%;
     }
 #contact .contact-area{
@@ -399,11 +397,11 @@ _:-ms-lang(x)::-ms-backdrop, #lead .lead-area p{
 }
 
 @media screen and (max-width:600px) {
-#contact .contact-img,
+#contact ,
 #contact .contact-area{
     width:100%;
     }
-#contact .contact-img{
+#contact{
         margin:0 0 50px 0;
 }
 }
