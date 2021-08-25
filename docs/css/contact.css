@@ -26,7 +26,7 @@ body {
   background: var(--bg);
   /* font-family: "Bree Serif", sans-serif; */
   font-family: 'Shippori Mincho', serif;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 
 img {
