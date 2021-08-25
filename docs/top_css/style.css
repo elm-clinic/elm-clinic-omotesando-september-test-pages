@@ -589,7 +589,7 @@ img {
   color: #fff;
   opacity: 0.7;
   box-shadow: none;
-  -webkit-transform: translateY(3px);
+  /* -webkit-transform: translateY(3px); */
 }
 .shiny-btn5::before {
   position: absolute;
